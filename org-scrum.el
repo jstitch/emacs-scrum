@@ -250,7 +250,7 @@ Returns (list-of-closed-tasks total-remaining-work)"
 
       (insert "\n| " (car developer)
               " | " (number-to-string est)
-              " | " (number-to-string act)
+              " | " (format "%.2f" act)
               " | " (number-to-string done)
               " | " (number-to-string rem)
               " | " (format-time-string "%Y-%m-%d" (org-scrum--get-finish-date rem (cdr developer)))
